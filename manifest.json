@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+    "name": "Feedback Overlay",
+    "description": "Display overlay of user feedback",
+    "version": "1.0",
+    "browser_action": {
+        "default_icon": "thumb-icon.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "storage",
+        "https://*/"
+    ],
+    "content_scripts": [
+        {
+            "css": [
+                "overlay.css"
+            ],
+            "js": [
+                "overlay.js"
+            ],
+            "matches": [
+                "https://*.lifewire.com/*"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        "overlay.html"
+    ]
+}

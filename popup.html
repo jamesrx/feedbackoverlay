@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="popup.css" />
+        <title>Feedback Overlay</title>
+    </head>
+    <body>
+        <div>
+            <h1>Feedback Overlay</h1>
+            <form id="settings">
+                <label><input type="checkbox" name="hide-overlay"> Hide Overlay</label>
+
+                <p>Enabled for:</p>
+                <ul>
+                    <li><label><input type="checkbox" name="domains" value="lifewire" /> Lifewire</label></li>
+                    <li><label><input type="checkbox" name="domains" value="thoughtco" /> ThoughtCo</label></li>
+                </ul>
+
+                <label>From: <input type="date" name="from-date" /></label>
+                <label>To: <input type="date" name="to-date" /></label>
+            </form>
+        </div>
+        <script src="popup.js"></script>
+    </body>
+</html>
